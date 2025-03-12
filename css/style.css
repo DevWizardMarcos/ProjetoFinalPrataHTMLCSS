@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header {
+    background-color: #313131;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  
+}
+
+nav ul li {
+    font-size: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+}
+
+.banner-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 30px;
+    text-align: center;
+    flex-direction: row-reverse;
+    background-color: #f1c40f;
+}
+
+
+.image-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-banner video {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.conteudo-banner {
+    max-width: 500px;
+}
+
+.conteudo-banner h1{
+    
+    color: #313131 ;
+}
+
+.conteudo-banner p{
+    
+    color: #313131 ;
+}
+
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffff;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.primario {
+    background-color: #00c5cf;
+    color: #ffff;
+}
+
+
+ .banner-secundario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    text-align: center;
+}
+
+.secundario {
+    background-color: transparent;
+    color: white;
+    margin: 0 10px;
+    border: 1px solid #ffff;
+}
+
+.botao-banner-secundario {
+    background-color: #f1c40f;
+    color: white;
+}
+
+.botao-banner-secundario:hover {
+    background-color: #0000;
+    color: #f1c40f;
+}
+
+
+
+
+
+
+.banner-terceiro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.conteudo-terceiro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f1c40f;
+    gap: 20px;
+
+}
+
+
+.conteudo-terceiro h1, .conteudo-terceiro p {
+    position: relative;
+    color: #313131;
+    font-weight: 600;
+    top: 40px;
+}
+
+.banner-terceiro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1c40f;
+
+}
+
+.card {
+    background-color: #313131;
+    border: 1px solid #645b5b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    color: #ffff;
+}
+
+.card .img-banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card .img-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 15px;
+    padding: 0 15px 15px;
+    color:#ffff;
+}
+
+.conteudo-quarto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.conteudo-quarto h1, .conteudo-quarto p {
+    position: relative;
+    color: #313131;
+    font-weight: 600;
+   
+}
+
+
+
+.banner-quarto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffff;
+
+}
+
+.card-doctor {
+    background-color: #ffff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-doctor .img-banner-doctor {
+    width: 100%;
+    height: 300px; /* Aumente a altura conforme necessário */
+    overflow: hidden;
+}
+
+.card-doctor .img-banner-doctor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3;
+}
+
+.card-doctor h1 {
+    font-size: 20px;
+    margin: 15px;
+    color: #313131;
+}
+
+.card-doctor p {
+    font-size: 15px;
+    padding: 0 15px 15px;
+    color: #6d6a6a;
+    font-weight: 900;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.social-icons img {
+    width: 24px; /* Ajuste conforme necessário */
+    height: 24px; /* Ajuste conforme necessário */
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: #f1c40f;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.conteudo-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.imagens-e-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.imagem-footer {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.formulario {
+    flex: 1;
+    background-color: #313131;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.formulario textarea {
+    resize: vertical;
+    height: 100px; /* Aumente a altura conforme necessário */
+}
+
+.btn.enviar {
+    background-color: #f1c40f;
+    color: #313131;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.enviar:hover {
+    background-color: #645b5b;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
